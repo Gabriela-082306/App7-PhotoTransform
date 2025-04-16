@@ -100,7 +100,9 @@
           /*  +++++++++++++++ BEGIN IMAGE PROCESSING +++++++++++++++ */
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-          /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
+         // Get image data from canvas 1
+         var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+         var data = imageData.data;
           
           
           
