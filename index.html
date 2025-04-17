@@ -154,6 +154,17 @@
         context.fillText("Original image will go here", 10, 20);
       </script>
 
+
+     <!-- Second canvas for blue-only image-->
+     <canvas id="dataCanvas" width="600" height="500" style="border:1px solid #0000FF; margin-top: 20px;"></canvas>
+     <script>
+      var canvas2 = document.getElementById('dataCanvas');
+      var dataContext = canvas2.getContext("2d");
+      dataContext.font = '20pt Calibri';
+      dataContext.fillStyle = "blue";
+      dataContext.fillText("Blue intensities only", 10, 20);
+     </script>
+
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed">
       <p>DIY Diagnostics</p>
