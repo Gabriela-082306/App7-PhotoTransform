@@ -111,8 +111,10 @@
           data[i + 1] = 0; // green
           // blue (data[i + 2]) is left unchanged
           // alpha (data[i + 3]) is unchanged
+         }
           
-          
+          //Put modified data into Canvas 2
+         dataContext.putImageData(imageData, 0, 0);
           
         } // end of img.onload
         
